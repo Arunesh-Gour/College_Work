@@ -19,4 +19,4 @@ File structure  :
 Task 1 : Run ./task_1/task1.html in web-browser.
 Task 2 : Run ./task_2/task2.html in web-browser.
 
-GitHub : 
+GitHub : https://github.com/Arunesh-Gour/College_Work/tree/master/SEM_5/IWP/Assignment_3
