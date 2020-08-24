@@ -1,0 +1,64 @@
+<html>
+   <head>
+      <title>Assignment 2</title>
+      <style>
+         body {
+            background-color: rgb(24, 24, 24);
+         }
+         
+         #outer {
+            height: 90%;
+            width: 90%;
+            top: 5%;
+            left: 5%;
+            background-color: rgb(20, 0, 50);
+            color: rgb(200, 200, 200);
+         }
+         
+         #main {
+            height: 90%;
+            width: 60%;
+            margin: auto;
+            padding: 10%;
+            box-sizing: border-box;
+            background-color: rgb(40, 0, 100);
+            color: rgb(200, 200, 200);
+         }
+         
+         #ibutton {
+            width: 80%;
+            margin: auto;
+            padding: 5%;
+            box-sizing: border-box;
+            background-color: rgb(42, 0, 140);
+         }
+         
+         #info {
+            width: 80%;
+            height: 40%;
+            margin: auto;
+            padding: 10%;
+            box-sizing: border-box;
+            background-color: rgb(20, 0, 50);
+            color: rgb(200, 200, 200);
+         }
+      </style>
+      <script src="task.js" ></script>
+   </head>
+   <body onload="loaded()" onunload="unloaded()">
+      <div id="outer">
+         <div id="main" onmouseover="mousehovered()" onmouseout="mouseremoved()">
+            Type something in the input field, or use mouse over this div to see result. <BR /><BR /><BR />
+            <div id="info" onmouseover="" onmouseout="">
+               Events will be shown here, as they occur.
+            </div>
+            <div id="ibutton" onmouseover="" onmouseout="">
+               <form onsubmit="submitted()" onchange="changed()">
+                  <input type="text" placeholder="type here ..." onblur="blurred()" onfocus="focussed()"/>
+                  <input type="submit" value="Submit" />
+               </form>
+            </div>
+         </div>
+      </div>
+   </body>
+</html>
